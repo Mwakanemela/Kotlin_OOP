@@ -1,6 +1,6 @@
 fun main() {
-   val house = House(1, 5.5, "blue")
-   House("colorMwaka", 4)
+   House(1, 5.5, "blue",500.5)
+   // House("colorMwaka", 4)
 }
 
 class House(color: String, rooms: Int) {
@@ -18,5 +18,9 @@ class House(color: String, rooms: Int) {
     }
     constructor(rooms: Int, bathrooms: Double, color: String): this(color, rooms){
         println("House color $color,  no. of $bathrooms, no. of rooms $rooms")
+    }
+
+    constructor(rooms: Int, bathrooms: Double, color: String, rentFee: Double):                 this(color, rooms){
+        println("rent fee $rentFee")
     }
 }
